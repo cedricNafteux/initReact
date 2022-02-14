@@ -1,31 +1,16 @@
-import React from 'react';
-import data from './Data';
-import AnimalCard from '../AnimalCard/AnimalCard';
+import { Component } from 'react';
 import './App.css';
+import Product from '../Product/Product';
 
-function App() {
-  return (
-    <div className="wrapper">
-      <h1>Animals</h1>
-      {data.map(animal => (
-        <AnimalCard
-        key={animal.name}
-        name={animal.name}
-        />
-      ))}
-    </div>
-  )
+class App extends Component {
+  render() {
+    return (
+    <Product/>
+    );
+  }
+
 }
-
 export default App;
-
-
-
-
-
-
-
-
 
 
 
